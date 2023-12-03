@@ -1,0 +1,212 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 90%;
+}
+
+
+#cabeza{
+    display: flex;
+    justify-content:space-between ;
+    padding: 40px 0;
+}
+
+#cabeza #logo{
+    width: 5%;
+    margin: 0;
+}
+
+#logo img{
+  width: 100%;
+}
+
+#cabeza #menu{
+    display: flex;
+    width: 45%;
+    margin: 0;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+#menu li{
+  margin: 0;
+}
+
+#menu li:hover{
+    padding-top: 5px;
+  }
+
+#menu li a{
+    text-decoration: none;
+   color: black;
+}
+
+#menu li a:hover{
+    
+    color: blue;
+  
+}
+
+/* FIN ECABEZADO */
+/* INICIO CONTEN */
+
+#content{
+    /* height: 550px; */
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: space-between;
+}
+
+#content #izquierda{
+    /* min-height: 115px; */
+    
+    width: 63%;
+    margin: 0;
+}
+
+#content #derecha{
+    /* min-height: 115px; */
+    background-color: rgb(0, 0, 0);
+    width: 35%;
+    margin: 0;
+    /* min-height: 200px; */
+}
+
+#baner{
+    background-color: rgb(255, 255, 255);
+    /* min-height: 200px; */
+}
+
+#baner img{
+    width: 100%;
+}
+
+#cajas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#cajas .caja{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    min-width: 45%;
+}
+#cajas h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.caja button{
+    border: none;
+    padding: 12px 14px ;
+    background-color: rgb(237, 58, 58);
+    color: antiquewhite;
+   font-size: 15px;
+   letter-spacing: 3px;
+}
+
+.caja p {
+   line-height: 25px;
+   color: rgb(128, 69, 69);
+   margin-bottom:  140px;
+}
+#content #derecha{
+    width: 35%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#content #derecha .card:nth-child(3){
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+}
+#content #derecha h1{
+    color: #eaae54;
+    margin: 20px 0;
+    font-size: 40px;
+}
+#content .card{
+    padding: 20px 0;
+}
+
+#content .card h3 a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#content .card h3 a:hover{
+    color: #eaae54;
+}
+    
+/* FIN CONTEN */
+/* INICIO PIEDE DE PAGINA  */
+
+footer{
+    display: flex;
+    margin-top: 40px;
+}
+
+footer .footer-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-card #img-footer{
+    width: 20%;
+}
+
+.footer-card #text{
+    width: 75%;
+}
+
+.footer-card #text h2{
+    color: #ccc;
+    margin-bottom: 10px;
+
+}
+
+.footer-card #text h5{
+    margin-bottom: 10px;
+}
+
+.footer-card #text p{
+    font-size: 12px;
+}
+.footer-card #img-footer img{
+    width: 100%;
+
+}
+
+@media (max-width:480px){
+    #conten{
+        flex-direction: column;
+    }
+    #futer{
+        flex-direction: column;
+    }
+
+    #conten #izquierda,
+    #conten #derecha, #futer .caja2
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width:320px) {
+    #cajas{
+        flex-direction: column;
+    }
+
+    #cajas .caja{
+        margin: 0 auto;
+        width: 90%;
+        margin: 20px;
+    }
+}
