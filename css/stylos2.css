@@ -167,7 +167,7 @@ footer .footer-card{
 #hamburguer,#close{
     display: none;
 }
-@media (max-width:480px){
+@media (max-width:400px){
     #hamburguer,#close{
         display: block;
         position: absolute;
